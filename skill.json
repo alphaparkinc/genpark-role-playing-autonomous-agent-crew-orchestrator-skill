@@ -1,0 +1,38 @@
+{
+  "name": "genpark-role-playing-autonomous-agent-crew-orchestrator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Role-playing autonomous agent orchestrator managing goal assignment, inter-agent delegation, and task hierarchies.",
+  "author": "genpark",
+  "category": "agent-orchestrator",
+  "tags": [
+    "crewai",
+    "role-playing-agents",
+    "autonomous-crew",
+    "agent-delegation",
+    "multi-agent-mission"
+  ],
+  "inputs": {
+    "mission_goal": {
+      "type": "string"
+    },
+    "crew_roles": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "crew_mission_id": {
+      "type": "string"
+    },
+    "agents_active_count": {
+      "type": "integer"
+    },
+    "tasks_executed_hierarchically": {
+      "type": "integer"
+    },
+    "compiled_deliverables_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
